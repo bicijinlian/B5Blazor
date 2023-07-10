@@ -3,6 +3,6 @@
 ## 官网
 [https://b5blazor.wanggaofeng.net]
 ## 交流社区
-![QQ交流群](xxx.png)
+![QQ交流群](Docs/Images/BlazorUI群聊二维码.png)
 ![微信交流群]()
 ## 
