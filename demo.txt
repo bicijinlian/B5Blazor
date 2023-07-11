@@ -1,1 +1,0 @@
-从gitea推送镜像到Github测试。
