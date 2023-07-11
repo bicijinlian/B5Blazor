@@ -1,5 +1,6 @@
 h1:focus {
-    outline: none;
+    outline: 2px solid purple;
+    border-radius: 5px;
 }
 
 #blazor-error-ui {
