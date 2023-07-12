@@ -34,7 +34,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.Docs.Server", "B5B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.Docs.WASM", "B5Blazor.Docs.WASM\B5Blazor.Docs.WASM.csproj", "{863BCC80-5237-48CC-832C-3F71C2E6590E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B5Blazor.WASM", "B5Blazor.WASM\B5Blazor.WASM.csproj", "{79E6E27C-48D9-4ED3-A8A0-F6ABFBCA84C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.WASM", "B5Blazor.WASM\B5Blazor.WASM.csproj", "{79E6E27C-48D9-4ED3-A8A0-F6ABFBCA84C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
