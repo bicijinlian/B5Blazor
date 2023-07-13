@@ -20,76 +20,72 @@ namespace B5Blazor.UnitTest.Utilities
         [Fact]
         public void Temp_Test()
         {
-            var builder = CssBuilder.Default();
-
-            builder.AddValue(null);
-
-            var cssText = builder.Build();
+            var cssClassString = CssBuilder
+                .Default()
+                .AddValue(null)
+                .Build();
 
             //断言
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Fact]
         public void Create_Null_Test()
         {
-            var builder = new CssBuilder(null);
+            var cssClassString = new CssBuilder(null)
+                .Build();
 
-            var cssText = builder.Build();
-
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Fact]
         public void Create_Test()
         {
-            var builder = new CssBuilder("container");
+            var cssClassString = new CssBuilder("container")
+                .Build();
 
-            var cssText = builder.Build();
-
-            Assert.Equal("container", cssText);
+            Assert.Equal("container", cssClassString);
         }
 
         [Fact]
         public void GetDefault_Test()
         {
-            var builder = CssBuilder.Default();
+            var cssClassString =  CssBuilder
+                .Default()
+                .Build();
 
-            var cssText = builder.Build();
-
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Fact]
         public void GetEmpty_Test()
         {
-            var builder = CssBuilder.Empty();
+            var cssClassString = CssBuilder.Empty()
+                .Build();
 
-            var cssText = builder.Build();
-
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Theory]
         [InlineData("", null)]
         public void AddClass_Test(string? value, Func<bool> when)
         {
-            _builder.AddClass(value, when);
+            var cssClassString = _builder
+                .AddClass(value, when)
+                .Build();
 
-            var cssText = _builder.Build();
-
-            Assert.Equal(value, cssText);
+            Assert.Equal(value, cssClassString);
         }
 
         [Fact]
         public void AddClassFromAttributes_Null_Test()
         {
-            _builder.AddValue(null);
-
-            var cssText = _builder.Build();
+            var cssClassString = _builder
+                .AddValue(null)
+                .Build();
 
             //断言
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Fact]
@@ -102,11 +98,11 @@ namespace B5Blazor.UnitTest.Utilities
                 {"language","zh-CN" },
             }; 
 
-            _builder.AddClassFromAttributes(additional);
-            var cssText = _builder.Build();
+            var cssClassString = _builder
+                .AddClassFromAttributes(additional)
+                .Build();
 
-            //断言
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Fact]
@@ -120,10 +116,9 @@ namespace B5Blazor.UnitTest.Utilities
             };
 
             _builder.AddClassFromAttributes(additional);
-            var cssText = _builder.Build();
+            var cssClassString = _builder.Build();
 
-            //断言
-            Assert.Empty(cssText);
+            Assert.Empty(cssClassString);
         }
 
         [Fact]
@@ -136,31 +131,33 @@ namespace B5Blazor.UnitTest.Utilities
                 {"language","zh-CN" },
             };
 
-            _builder.AddClassFromAttributes(additional);
-            var cssText = _builder.Build();
+            var cssClassString = _builder
+                .AddClassFromAttributes(additional)
+                .Build();
 
-            //断言
-            Assert.Equal("container",cssText);
+            Assert.Equal("container",cssClassString);
         }
 
         
         [Fact]
         public void Build_Test()
         {
-            _builder.SetPrefix("b5b_");
-            _builder.AddClass("container");
-            _builder.AddClass("card");
-            var cssText = _builder.Build();
+            var cssClassString =  _builder
+                .SetPrefix("b5b_")
+                .AddClass("container")
+                .AddClass("card")
+                .Build();
 
-            Assert.Equal("b5b_container b5b_card", cssText);
+            Assert.Equal("b5b_container b5b_card", cssClassString);
         }
 
         [Fact]
         public void Tostring_Test()
         {
-            _builder.SetPrefix("b5b_");
-            _builder.AddClass("container");
-            _builder.AddClass("card");
+            _builder
+                .SetPrefix("b5b_")
+                .AddClass("container")
+                .AddClass("card");
  
             Assert.Equal(_builder.Build(),_builder.ToString());
         }
