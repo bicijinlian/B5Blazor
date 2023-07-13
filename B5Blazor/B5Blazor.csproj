@@ -15,4 +15,18 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Component\Layout\" />
+    <Folder Include="Component\Alert\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Shared\" />
+    <Folder Include="Locales\" />
+    <Folder Include="Options\" />
+    <Folder Include="Services\" />
+    <Folder Include="Attributes\" />
+    <Folder Include="Dynamic\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
 </Project>

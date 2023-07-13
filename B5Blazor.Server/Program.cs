@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 
+// ‰≥ˆ–≈œ¢
+var root = builder.Environment.WebRootPath;
+Console.WriteLine(root);
 var app = builder.Build();
 
 
