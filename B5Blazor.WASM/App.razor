@@ -1,11 +1,14 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿<Router 
+    AppAssembly="@typeof(App).Assembly" 
+    AdditionalAssemblies="new []{typeof(B5Blazor.Component.B5BlazorBase).Assembly}" 
+>
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(B5Blazor.Shared.MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
+        <LayoutView Layout="@typeof(B5Blazor.Shared.MainLayout)">
             <p role="alert">Sorry, there's nothing at this address.</p>
         </LayoutView>
     </NotFound>

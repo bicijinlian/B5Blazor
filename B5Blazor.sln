@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
@@ -9,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{C5915EED-64DF-4F71-8CFB-08D98D680AB5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A21868FB-D46D-4848-85E6-617F0D6E9008}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\说明.md = Docs\说明.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{4DDED467-76B8-4F4A-BC05-E3EE1DDD95BD}"
 EndProject
@@ -36,7 +40,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.Docs.WASM", "B5Bla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.WASM", "B5Blazor.WASM\B5Blazor.WASM.csproj", "{79E6E27C-48D9-4ED3-A8A0-F6ABFBCA84C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B5Blazor.UnitTest", "B5Blazor.UnitTest\B5Blazor.UnitTest.csproj", "{B05A78F4-9795-49B6-AE74-0637AA2F4DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.UnitTest", "B5Blazor.UnitTest\B5Blazor.UnitTest.csproj", "{B05A78F4-9795-49B6-AE74-0637AA2F4DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B5Blazor.Shared", "B5Blazor.Shared\B5Blazor.Shared.csproj", "{8C9CD040-FACF-46DA-82E9-8DBF38486C49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +98,10 @@ Global
 		{B05A78F4-9795-49B6-AE74-0637AA2F4DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B05A78F4-9795-49B6-AE74-0637AA2F4DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B05A78F4-9795-49B6-AE74-0637AA2F4DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9CD040-FACF-46DA-82E9-8DBF38486C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9CD040-FACF-46DA-82E9-8DBF38486C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9CD040-FACF-46DA-82E9-8DBF38486C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9CD040-FACF-46DA-82E9-8DBF38486C49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +119,7 @@ Global
 		{863BCC80-5237-48CC-832C-3F71C2E6590E} = {6577F43A-A2A4-415F-B681-20D3D0C7A554}
 		{79E6E27C-48D9-4ED3-A8A0-F6ABFBCA84C7} = {46749E4C-4035-42EF-924A-9B7FDC60C4DC}
 		{B05A78F4-9795-49B6-AE74-0637AA2F4DE8} = {C5915EED-64DF-4F71-8CFB-08D98D680AB5}
+		{8C9CD040-FACF-46DA-82E9-8DBF38486C49} = {46749E4C-4035-42EF-924A-9B7FDC60C4DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6FD560FB-2120-4DA8-B29D-8B116FB9ADE6}

@@ -1,0 +1,17 @@
+﻿@namespace B5Blazor.Component
+@inherits B5Blazor.Component.B5BlazorBase
+
+<div @attributes="@AdditionalAttributes" class="@ClassNamesString">
+    <div class="@TextClassString">
+        @if (!string.IsNullOrEmpty(Icon))
+        {
+            <i class="@Icon"></i>
+        }
+
+        @if (!string.IsNullOrEmpty(Text))
+        {
+            <span>@Text</span>
+        }
+        @ChildContent
+    </div>
+</div>
