@@ -9,26 +9,25 @@
 
     <!-- B5Blazor库中的bootstrap5样式 -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="_content/B5Blazor.Shared/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <!-- 图标库样式 -->
     <link href="bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
-
-    <link href="css/app.css" rel="stylesheet" />
-   
+    <link href="_content/B5Blazor.Shared/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="app">拼命加载中...</div>
-    <div class="card">
-        <div class="card-body card-subtitle">xxxxxx</div>
+    <div class="container">
+        <div class="card mt-3">
+            <div class="card-body">
+                <p>重要说明：B5Blazor UI 库包含 Bootstrap 和 jQuery 等库文件，各引用库应该统一使用 B5Blazor UI库中的 bootstrap 和 jQuery等文件，避免版本问题和方便统一更新等管理！</p>
+                <p>开发问题：由于 Visual Studio 对 html、css智能感知不完善，特别是引用PCL类库中CSS。为解决这一问题，可以使用VS插件 "Better Razor CSS Class Intellisense", 并使用使用项目本身的Bootstrap副本文件！</p>
+                <p>暂时找到些种解决方案，更好方案寻找中！(当然也可以使用vs code，那要来回切换，对Blazor的支持也不是全面、不太好！)</p>
+            </div>
+        </div>
     </div>
-    <div id="blazor-error-ui">
-        发生未经处理的异常
-        <a href="" class="reload">重新加载</a>
-        <a class="dismiss">🗙</a>
-    </div>
-
+    <div class="d-flex justify-content-between"><a target="_blank"></a></div>
      <!--添加 B5Blazor库中的bootstrap5脚本-->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
