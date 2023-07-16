@@ -25,15 +25,17 @@ namespace B5Blazor.Utilities
         }
 
         public CssBuilder(string? value = null)
+        :this(value,"")
         {
-            prefix = string.Empty;
-            stringBuffer.Append(value);
         }
 
-        public CssBuilder(string? value, string prefix = "")
+        public CssBuilder(string? value, string? prefix = "")
         {
-            prefix = prefix ?? string.Empty;
-            stringBuffer.Append(value);
+            this.prefix = prefix ?? string.Empty;
+            if (!string.IsNullOrWhiteSpace(value))
+            { 
+                stringBuffer.Append(" " + prefix + value);
+            }
         }
 
         public CssBuilder SetPrefix(string? value)
@@ -115,7 +117,7 @@ namespace B5Blazor.Utilities
             return AddClass(builder, when());
         }
 
-        public CssBuilder AddClassFromAttributes(IReadOnlyDictionary<string, object> additionalAttributes)
+        public CssBuilder AddClassFromAttributes(IReadOnlyDictionary<string, object>? additionalAttributes)
         {
             if (additionalAttributes != null)
             {
@@ -150,11 +152,6 @@ namespace B5Blazor.Utilities
         }
         public string Build()
         {
-            if (stringBuffer == null)
-            {
-                return string.Empty;
-            }
-
             return stringBuffer.ToString().Trim();
         }
         public override string ToString()
