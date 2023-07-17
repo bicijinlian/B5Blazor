@@ -1,5 +1,5 @@
 h1:focus {
-    outline: 2px solid purple;
+    border: 2px solid purple;
     border-radius: 5px;
 }
 

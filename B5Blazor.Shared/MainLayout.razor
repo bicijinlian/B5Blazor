@@ -1,31 +1,12 @@
-﻿@inherits LayoutComponentBase
+@inherits LayoutComponentBase
 <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img width="40" height="32" src="@B5Blazor.Shared.GlobalApp.B5BlazorSharedWebRoot/images/bootstrap-logo.png" />
-        </a>
-      </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">首页</a></li>
-          <li class="nav-item"><a href="https://b5blazor.wanggaofeng.net" class="nav-link px-2 text-body-secondary" target="_blank">官网</a></li>
-          <li class="nav-item"><a href="https://blog.wanggaofeng.net" class="nav-link px-2 text-body-secondary" target="_blank">文档</a></li>
-          <li class="nav-item"><a href="http://git.wanggaofeng.cn:3000" class="nav-link px-2 text-body-secondary" target="_blank">组件</a></li>
-          <li class="nav-item"><a href="https://github.com/bicijinlian/B5Blazor" class="nav-link px-2 text-body-secondary" target="_blank">示例</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">QQ</button>
-        <button type="button" class="btn btn-primary">微信</button>
-      </div>
-    </header>
-    <main class="row">
+    <Header></Header>
+    <main class="row" style="min-height: calc(100vh - 220px);">
         <div class="col-2">
-            导航
+            <MainMenu></MainMenu>
         </div>
         <div class="col-10">
-           <nav class="navbar navbar-expand-lg bg-body-tertiary mb-1">
+           <nav class="navbar navbar-expand-lg bg-dark-subtle mb-2">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">B5Blazor组件库</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,22 +25,8 @@
             <div>
                 @Body
             </div>
-
         </div>
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2023 b5blazor.wanggaofeng.net, Inc</p>
-
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img width="40" height="32" src="@B5Blazor.Shared.GlobalApp.B5BlazorSharedWebRoot/images/bootstrap-logo.png" />
-        </a>
-
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="https://b5blazor.wanggaofeng.net" class="nav-link px-2 text-body-secondary" target="_blank">官网</a></li>
-          <li class="nav-item"><a href="https://blog.wanggaofeng.net" class="nav-link px-2 text-body-secondary" target="_blank">博客</a></li>
-          <li class="nav-item"><a href="http://git.wanggaofeng.cn:3000" class="nav-link px-2 text-body-secondary" target="_blank">源码仓库</a></li>
-          <li class="nav-item"><a href="https://github.com/bicijinlian/B5Blazor" class="nav-link px-2 text-body-secondary" target="_blank">Github</a></li>
-        </ul>
-    </footer>
+    <Footer></Footer>
 </div>
 

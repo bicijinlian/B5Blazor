@@ -42,7 +42,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.WASM", "B5Blazor.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.UnitTest", "B5Blazor.UnitTest\B5Blazor.UnitTest.csproj", "{B05A78F4-9795-49B6-AE74-0637AA2F4DE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B5Blazor.Shared", "B5Blazor.Shared\B5Blazor.Shared.csproj", "{8C9CD040-FACF-46DA-82E9-8DBF38486C49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "B5Blazor.Shared", "B5Blazor.Shared\B5Blazor.Shared.csproj", "{8C9CD040-FACF-46DA-82E9-8DBF38486C49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

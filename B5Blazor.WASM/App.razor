@@ -1,6 +1,6 @@
 ﻿<Router 
     AppAssembly="@typeof(App).Assembly" 
-    AdditionalAssemblies="new []{typeof(B5Blazor.Component.B5BlazorBase).Assembly}" 
+    AdditionalAssemblies="new []{typeof(B5Blazor.Component.B5BlazorBase).Assembly,typeof(B5Blazor.Shared.GlobalApp).Assembly}" 
 >
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(B5Blazor.Shared.MainLayout)" />
