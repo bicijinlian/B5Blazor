@@ -6,7 +6,7 @@
     }
   },
   "profiles": {
-    "http": {
+    "B5Blazor.Server": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
