@@ -10,4 +10,11 @@
     <ProjectReference Include="..\B5Blazor.Shared\B5Blazor.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\index.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

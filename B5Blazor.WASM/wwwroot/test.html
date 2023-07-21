@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <title>B5Blazor.WASM</title>
+    <base href="/" />
+
+    <!-- B5Blazor库中的bootstrap5样式 -->
+    <link href="_content/B5Blazor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- 图标库样式 -->
+    <link href="_content/B5Blazor/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+    <link href="css/app.css" rel="stylesheet" />
+    
+    <!-- Blazor组件隔离CSS(会自动加载引用类库的组件css)-->
+    <link href="B5Blazor.WASM.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                标题
+            </div>
+            <div class="card-body">
+                内容
+            </div>
+        </div>
+    </div>
+
+     <!--添加 B5Blazor库中的bootstrap5脚本-->
+    <script src="_content/B5Blazor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+
+</html>
