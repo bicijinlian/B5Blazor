@@ -9,10 +9,10 @@ namespace B5Blazor.Component
     /// <summary>
     /// 分割线 组件
     /// </summary>
-    public partial class Divider
+    public partial class Divider : B5BlazorBase
     {
         protected virtual string ClassNamesString => CssBuilder.Default("divider")
-            .AddClass("divider-vertical",IsVertical)
+            .AddClass("divider-vertical", IsVertical)
             .AddClassFromAttributes(AdditionalAttributes)
             .Build();
 
