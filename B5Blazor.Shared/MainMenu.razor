@@ -1,51 +1,109 @@
-﻿<ul class="list-group mb-3">
-    <a href="#" class="list-group-item list-group-item-action active disabled d-flex justify-content-between align-items-center" aria-current="true">
-       <span>最新测试</span><span class="badge bg-danger rounded-pill"> 5 </span>
-    </a>
-    <a href="/divider" class="list-group-item list-group-item-secondary list-group-item-action">
-        分隔线
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        菜单A
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        菜单B
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-       菜单C
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-       菜单AAA
-    </a>
-</ul>
+﻿<div class="me-3" id="left-menu-box">
+    <div class="card mb-2">
+        <div class="list-group list-group-flush border-bottom-0">
+            <a href="#menu_tab_layout" class="list-group-item list-group-item-action active d-flex justify-content-between" data-bs-toggle="collapse" role="button">
+                <span><i class="bi bi-grid-3x3-gap-fill" style="color: powderblue;"></i> 布局学习</span> <span class="badge bg-danger rounded-pill"> 8 </span>
+            </a>
+        </div>
+        <div class="list-group list-group-flush collapse" id="menu_tab_layout" data-bs-parent="#left-menu-box">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                断点
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                容器
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                网格(Grid)
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                列(Columns)
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                槽(Gutters)
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                实用工具
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                Z-Index
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                CSS 网格
+            </a>
+        </div>
+    </div>
 
-<ul class="list-group">
-    <a href="#" class="list-group-item list-group-item-action active disabled d-flex justify-content-between align-items-center" aria-current="true">
-       <span>分隔线组件</span><span class="badge bg-danger rounded-pill"> 4 </span>
-    </a>
-    <a href="/divider" class="list-group-item list-group-item-action">
-        分隔线
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        菜单D
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        菜单E
-    </a>
-    <a class="list-group-item list-group-item-action disabled">
-       菜单F
-    </a>
-</ul>
+    <div class="card mb-2">
+        <div class="list-group list-group-flush border-bottom-0">
+            <a href="#menu_tab_component" class="list-group-item list-group-item-action list-group-item-info active d-flex justify-content-between" data-bs-toggle="collapse" role="button">
+                <span><i class="bi bi-award-fill"></i> 组件学习</span> <span class="badge bg-danger rounded-pill"> 9 </span>
+            </a>
+        </div>
+        <div class="list-group list-group-flush collapse" id="menu_tab_component" data-bs-parent="#left-menu-box">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                手风琴(Accordion)
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                警报
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                徽章
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                面包屑
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                按钮
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                按钮组
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                卡片
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                轮播
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                折叠
+            </a>
+        </div>
+    </div>
 
+    <div class="card">
+        <div class="list-group list-group-flush border-bottom-0">
+            <a href="#menu_tab_form" class="list-group-item list-group-item-action list-group-item-warning active d-flex justify-content-between" data-bs-toggle="collapse" role="button">
+                <span><i class="bi bi-box"></i> 表单学习</span><span class="badge bg-danger rounded-pill"> 10+ </span>
+            </a>
+        </div>
+        <div class="list-group list-group-flush collapse" id="menu_tab_form"  data-bs-parent="#left-menu-box">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                表单控件
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
+                选择控件
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">
+                复选框和单选按钮
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                范围控件
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                输入组控件
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                浮动标签控件
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                布局控件
+            </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                验证控件
+            </a>
+        </div>
+    </div>
 
-<div class="list-group mb-3">
-  <a href="#" class="list-group-item list-group-item-action active disabled d-flex justify-content-between align-items-center" aria-current="true">
-        <span>测试菜单组</span><span class="badge bg-danger rounded-pill">14</span>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action">测试菜单1</a>
-  <a href="#" class="list-group-item list-group-item-action">测试菜单2</a>
-  <a href="#" class="list-group-item list-group-item-action">测试菜单3</a>
-  <a class="list-group-item list-group-item-action disabled">测试菜单4</a>
 </div>
 
 @code {
